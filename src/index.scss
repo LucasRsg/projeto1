@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Playwrite+AR:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+
+*{
+  margin: 0px;
+  box-sizing: 0px;
+  font-family: 'Poppins';
+}
+
+a,a:visited,a:link{
+  color: inherit;
+  
+}
+
+
+.pagina{
+  background-color: #f5f6fA;
+  min-height: 100vh;
+
+  .cabecalho{
+    background-color: #ffff;
+    padding: 50px;
+
+
+
+  h1{
+    color:#606060;
+    font: 600 32px 'Poppins';
+  }
+
+
+  }
+
+  .secao{
+    background-color: #ffff;
+    padding: 40px;
+    box-shadow: 0px 0px 10px 1px #353333;
+    margin: 50px 60px;
+    max-width: 1000px;
+    border-radius: 5px;
+    font: 400 22px 'Poppins';
+
+
+    h1{
+      color:#333333;
+      font: 600 28px 'Poppins';
+      margin-bottom: 30px;
+
+    }
+
+
+    input, select{
+      border-color:#dad9d9 ;
+      padding:10px;
+      color: #606060;
+
+      font: 400 22px 'Poppins';
+      outline: none;
+      border-radius: 8px;
+
+      width: 100%;
+      min-width: 400px;
+      border-style:solid ;
+      margin-bottom: 30px;
+    
+    }
+
+
+    button{
+      background-color:#0084FF ;
+      color: #FFFF;
+
+      padding: 13px 30px;
+      font: 500 22px 'Poppins';
+
+      outline: none;
+      border: none;
+
+      border-radius: 3px;
+      
+    }
+
+
+  }
+
+
+}
