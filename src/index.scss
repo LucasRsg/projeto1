@@ -51,7 +51,7 @@ a,a:visited,a:link{
     }
 
 
-    input, select{
+    input, select, textarea{
       border-color:#dad9d9 ;
       padding:10px;
       color: #606060;
@@ -65,6 +65,10 @@ a,a:visited,a:link{
       border-style:solid ;
       margin-bottom: 30px;
     
+    }
+
+    input[ type='chekbox']{
+      min-width: auto;
     }
 
 

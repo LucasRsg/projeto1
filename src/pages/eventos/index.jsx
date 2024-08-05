@@ -1,41 +1,64 @@
 import './index.scss';
 
+import { Link } from 'react-router-dom';
 export default function Eventos() {
 
-    return(
+
+    function clicou(){
+        alert('Oie, usuario acaba de clicar');
+}
+function movimetntoMouse(){
+    alert('Oie, usuario acaba de movimentar o mouse');
+}
+function alterouValor(e){
+    let novoValor = e.target.value;
+    alert('Oie, usuario acaba de alterar o valor do input para : ' + novoValor);
+}
+function alterouCheck(e){
+    let alteroucheck1 = e.target.checked;
+    alert('Oie, usuario acaba de alterar o valor do check/radio para : ' + alteroucheck1);
+}
+
+    return (
         <div className='pagina-eventos pagina'>
-        <header className='cabecalho'>
-        <h1> React | Eventos </h1>
-        </header>
+            <header className='cabecalho'>
+                <h1> React | Eventos </h1>
+            </header>
 
-        <section className='secao'>
-         <h1> Óla, seja bem vindo</h1>
+            <section className='secao'>
+                <h1> Óla, seja bem vindo</h1>
 
-         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum aspernatur fugit voluptas cumque, quam repellat architecto sint incidunt labore similique, nulla doloribus rerum natus possimus necessitatibus itaque quos eveniet fuga?</p>
+                <p onClick={clicou} onMouseMove={movimetntoMouse}>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum aspernatur fugit voluptas cumque, quam repellat architecto sint incidunt labore similique, nulla doloribus rerum natus possimus necessitatibus itaque quos eveniet fuga?</p>
 
-         <input type="text" placeholder='Digite alguma coisa' />
+                <input onChange={alterouValor}type="text" placeholder='Digite alguma coisa' />
 
-         <select>
-            <option> Selecione</option>
-            <option> Item A</option>
-            <option> Item B</option>
-         
-         </select>
+                <textarea onChange={alterouValor} placeholder='   Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ea quam eum praesentium quis ipsa tenetur, excepturi deserunt iste cupiditate facere asperiores officia recusandae adipisci doloremque iusto repellat, obcaecati voluptates!'>
+                 
+                </textarea>
 
-         <div>
-            <input type='checkbox' /> Opção 1
-            <input type='checkbox' /> Opção 2
-         </div>
-         <div>
-         <input type='radio' /> Opção 2
-         <input type='radio' /> Opção 2
+                <select>
+                    <option> Selecione</option>
+                    <option> Item A</option>
+                    <option> Item B</option>
 
-         </div>
+                </select>
 
-        <button> Clique aqui </button>
+                <div className='grupo'>
+                    <input type='checkbox' onChange={alterouCheck}/> Opção 1
+                    <input type='checkbox' /> Opção 2
+                </div>
+                <div className='grupo' onChange={alterouCheck}>
 
-         </section>
+                    <input type='radio' name='gpo'  /> Opção 1
+
+                    <input type='radio' name='gpo' /> Opção 2
+
+                </div>
+
+                <button onClick={clicou}> Clique aqui </button>
+
+            </section>
         </div>
- 
+
     )
 }

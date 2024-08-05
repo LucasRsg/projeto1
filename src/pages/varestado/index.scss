@@ -1,0 +1,46 @@
+.pagina-varestado{
+
+
+    .cont{
+        display:flex;
+        align-items: center;
+        gap:20px;
+
+        font:600 28px Poppins;
+    }
+
+    .calculadora{
+
+
+    .entrada{
+        display: flex;
+        gap: 30px;
+        align-items:baseline ;
+        margin-bottom: 20px;
+    }
+
+    input[type='text']{
+        min-width: auto;
+        width: 150px;
+    }
+
+
+    .resultado{
+        border: 2px dashed;
+        width: 150px;
+        font: 500 28px 'Poppins';
+        padding: 5px;
+        text-align:center;
+  
+
+    }
+
+    button{
+        width: 160px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+
+}

@@ -22,9 +22,13 @@ function App() {
       <li>
 <Link to='/contato'>Ir para o contato </Link>
         </li>
-        
+
         <li>
-          <link to='/evento'>Ir para a página de eventos</link>
+          <Link to='/eventos'>Ir para a página de eventos</Link>
+        </li>
+
+        <li>
+          <Link to='/varestado'>Ir para Variável de Estado</Link>
         </li>
 
     </section>
